@@ -17,4 +17,4 @@ A complete rigid body six degrees of freedom helicopter simulation (ANSI-C) incl
 * IMU emulator
 * A place to write the flight control code...
 
-https://cloud.githubusercontent.com/assets/5231886/6562224/f2eb1b14-c69f-11e4-8234-10785c2cbba2.png
+![Alt text](https://cloud.githubusercontent.com/assets/5231886/6562224/f2eb1b14-c69f-11e4-8234-10785c2cbba2.png)
