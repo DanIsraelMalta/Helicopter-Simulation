@@ -3,7 +3,8 @@
 A complete rigid body six degrees of freedom helicopter simulation (ANSI-C) including:
 * Main rotor model (including a linear rotor flapping model accounting for coupled servo
   rotor dynamics and mechanical feedback by the gyroscopic effect of the stabilizer bar ("fly-bar"))
-* Tail rotor model
+* Both main & tail rotor include a combined finite element and blade momentum theory model for the
+  calculation of a rotor thrust, power & torque.
 * Vertical & horizontal stabilizer simulation (full aerodynamics)
 * ground contact/collision simulation
 * Opengl based "outside world" and "inertial navigation system" windows.
