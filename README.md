@@ -1,5 +1,7 @@
 # Helicopter-Simulation
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dd8d6dd64aee43eda773c641c96de2d1)](https://www.codacy.com/app/DanIsraelMalta/Helicopter-Simulation?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DanIsraelMalta/Helicopter-Simulation&amp;utm_campaign=Badge_Grade)
+
 A complete rigid body six degrees of freedom helicopter simulation (ANSI-C) including:
 * Main rotor model (including a linear rotor flapping model accounting for coupled servo
   rotor dynamics and mechanical feedback by the gyroscopic effect of the
