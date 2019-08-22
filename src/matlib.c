@@ -111,7 +111,7 @@ void F_QUATERNION_NORMALIZATION(double xio_quaternion[4]) {
 * @param  {array} latitude [rad]
 * @param  {array} longitude [rad]
 **/
-void F_GEODETIC_TO_ECEF(double xo_ecef[3], double xi_local[3], double xi_latitude, double xi_longitude) {
+void F_GEODETIC_TO_ECEF_4args(double xo_ecef[3], double xi_local[3], double xi_latitude, double xi_longitude) {
 	// locals
 	double _transformationMatrix[3][3],
 		   _cosLat, _cosLon, _sinLat, _sinLon;
@@ -186,7 +186,7 @@ void F_ECEF_TO_GEODETIC(double xi_ecef[3], double xo_llh[3])
 * @param  {array} 1x3 array {latitude [rad], longitude [rad], altitude [m]}
 * @return {array} 1x3 array holding ECEF XYZ coordinates [m]
 **/
-void F_GEODETIC_TO_ECEF(double xi_llh[3], double xo_ecef[3])
+void F_GEODETIC_TO_ECEF_2args(double xi_llh[3], double xo_ecef[3])
 {
 	// locals
 	double temp = sin(xi_llh[_LAT]), N;

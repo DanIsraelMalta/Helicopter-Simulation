@@ -656,7 +656,7 @@ void drawGUI(void) {
 void DrawCircle(float cx, float cy, float r, int num_segments) { 
     // locals
     int i;
-    float theta = C_TWOPI / float(num_segments),
+    float theta = C_TWOPI / (float)num_segments,
           c = cos(theta), s = sin(theta),
           x = r, y = 0; 
     

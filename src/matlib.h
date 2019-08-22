@@ -132,8 +132,8 @@
 void F_EULER_TO_DCM(double tBL[3][3], double phi, double theta, double psi);
 void F_QUATERNION_TO_DCM(double tBL[3][3], double q[4]);
 void F_QUATERNION_NORMALIZATION(double q[4]);
-void F_GEODETIC_TO_ECEF(double llh[3], double ECEF[3]);
-void F_GEODETIC_TO_ECEF(double xo_ecef[3], double xi_local[3], double xi_latitude, double xi_longitude);
+void F_GEODETIC_TO_ECEF_2args(double llh[3], double ECEF[3]);
+void F_GEODETIC_TO_ECEF_4args(double xo_ecef[3], double xi_local[3], double xi_latitude, double xi_longitude);
 void F_ECEF_TO_GEODETIC(double llh[3], double ECEF[3]);
 void F_QUATERNION_TO_EULER(double q[4], double euler[3]);
 void F_EULER_TO_QUATERNION(double q[4], const double phi, const double theta, const double psi);

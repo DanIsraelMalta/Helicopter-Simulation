@@ -1,0 +1,15 @@
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Visual studio files
+.vs/
+*.vc*proj*
+*.sln
+Release/
+Debug/
+
+# Freeglut generated files
+config.h
+freeglut.*
