@@ -151,7 +151,7 @@ void F_IMU(struct imu_inputs_def *pIn, struct imu_outputs_def *pOut) {
 	_vectorTemp1[_Z] = _body2earth[_Z][_X] * pIn->cg2imu[_X] + _body2earth[_Z][_Y] * pIn->cg2imu[_Y] + _body2earth[_Z][_Z] * pIn->cg2imu[_Z];
 
 	// transform position to ECEF coordinate system
-	F_GEODETIC_TO_ECEF(_VectorTemp2, _vectorTemp1, _lat, _lon);
+  F_GEODETIC_TO_ECEF_4args(_VectorTemp2, _vectorTemp1, _lat, _lon);
 
 	// calculate IMU position in ECEF coordinate system
 	pOut->ECEFpos[_X] = _VectorTemp2[_X] + pIn->cg_pos[_X];
@@ -1055,7 +1055,7 @@ void F_GRAVITY_MODEL(struct grav_inputs_def *pIn, struct grav_outputs_def *pOut)
 	_LLH[_ALT] = pIn->altitude * C_FOOT_TO_METER;
 
 	// calculate the position in ECEF coordinates
-	F_GEODETIC_TO_ECEF(_LLH, _ECEF);
+  F_GEODETIC_TO_ECEF_2args(_LLH, _ECEF);
 
 	// calculate distance from earth center [m]
 	_Recef = sqrt(_ECEF[_X] * _ECEF[_X] + _ECEF[_Y] * _ECEF[_Y] + _ECEF[_Z] * _ECEF[_Z]);
